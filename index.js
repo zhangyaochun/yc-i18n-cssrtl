@@ -37,10 +37,11 @@ function swap(filepath) {
         var output = R2.swap(content, {compress: false});
         
         //new file name
-        var newFile = filepath.substring(0, filepath.length-3 + 'rtl.css'); 
+        var newFile = filepath.substring(0, filepath.length-3) + 'rtl.css'; 
         
         //write in new file instead cover old file
-        fs.writeFileSync(newFile, content);
+        fs.writeFileSync(newFile, output);
+        
     } catch(e) {
         console.log('error for swap file');
     }
