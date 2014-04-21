@@ -25,14 +25,20 @@ function isFile() {
     return exists(filepath) && fs.statSync(filepath).isFile();
 }
 
+
+//core function swap
 function swap(filepath) {
     try {
-        //old file content
+        //old file content 
+        //TODO: if need encoding util such as iconv-lite
         var content = fs.readFileSync(filepath, 'utf-8');
+        
         //TOD: set compress as a option
         var output = R2.swap(content, {compress: false});
+        
         //new file name
         var newFile = filepath.substring(0, filepath.length-3 + 'rtl.css'); 
+        
         //write in new file instead cover old file
         fs.writeFileSync(newFile, content);
     } catch(e) {
