@@ -1,0 +1,26 @@
+{
+  "name": "yc-i18n-cssrtl",
+  "version": "0.0.1",
+  "description": "this is i18n tool for css rtl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhangyaochun/yc-i18n-cssrtl.git"
+  },
+  "keywords": [
+    "yc",
+    "i18n",
+    "cssrtl"
+  ],
+  "dependencies": {
+    "R2" : "1.4.1"
+  },
+  "author": "zhangyaochun",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/zhangyaochun/yc-i18n-cssrtl/issues"
+  }
+}
